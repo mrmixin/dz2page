@@ -158,7 +158,7 @@
    <li><a href="#form" class="list list-3">Форма для заказа</a></li>
     <li><a href="https://t.me/mihailkliagin" target="_blank"><img src="images/1840377_900_600.jpg" width="80" height="40"> </a> </li>
     <li><a href="https://vk.com/miklyagin" target="_blank"><img src="images/photo-1-1536x1536.jpg" width="40" height="40"></a></li>
-      <li><a href="гитхаб" target="_blank">github</a></li>
+      <li><a href="https://mrmixin.github.io/dz2page/#main-page" target="_blank">github</a></li>
   </ul>
  </header>
     <section id="main-page">
@@ -178,7 +178,8 @@
         <input name="q" type="hidden" value="search">
         <ul class="shop-ul1">
             <li class="shop-li1" width="210">
-                <img src="images/nike-costume1.jpg" class="shop-tovar1-photo" width="180">
+                <img src="images/nike-costume1.jpg" class="shop-tovar1-photo" width="180"  alt="My Image" id="my-image">
+                    <div id="image-caption"></div>
                 <h5 class="shop-h5">Nike костюм</h5>
                 <p>Красивый костюм. Цена 100р.</p>
                 <input type="hidden" name="vendor_code" value="111">
@@ -260,8 +261,6 @@
                 <p>Имя: <input name="first_name" size=20 type="Text" id="b" required></p>
                 <p>Почта: <input name="email" size=20 type="Text" id="с" required></p>
                 <p>Телефон <input name="telephone" size=20 type="Text" id="d" required></p>
-                </p>
-                </p>
                 <p> Дополнительная информация:
                     <br>
                     <TEXTAREA cols=80 name="textarea" rows=4>Для заметок</TEXTAREA>
@@ -325,6 +324,16 @@ function change(addClass, removeClass2, removeClass3) {
 change(btn1, btn2, btn3);
 change(btn2, btn1, btn3);
 change(btn3, btn2, btn1);
+const image = document.getElementById('my-image');
+  const caption = document.getElementById('image-caption');
+
+  image.addEventListener('mouseover', function() {
+    caption.textContent = 'При наведении на картинку будет высвечиваться такой текст';
+  });
+
+  image.addEventListener('mouseout', function() {
+    caption.textContent = '';
+  });
  </script>
 </body>
 </html>
