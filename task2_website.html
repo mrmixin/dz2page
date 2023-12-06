@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+ <title>Мой сайт</title>
+ <style>
+  a:link, a:visited {
+   color: black;
+   text-decoration: none;
+  }
+  a:hover, a:active {
+   color: yellow;
+   text-decoration: underline;
+  }
+
+  header {
+   position: fixed;
+   background-color: #AAF083;
+   padding: 10px;
+   top: 0;
+   left: 0;
+   width: 100%;
+   font-size: 18px;
+   font-weight: bold;
+   flex-direction: row;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+  }
+  header ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  }
+  header li {
+   margin-right: 20px;
+  }
+  header a {
+   color: white;
+   text-decoration: none;
+   padding: 5px;
+   border-radius: 5px;
+  }
+  header a:hover {
+   background-color: #bababa;
+  }
+  header .active {
+   background-color: #7860B4;
+  }
+  a.list-active {
+    text-decoration: underline;
+    }
+  .main-page-header
+  {
+    display: flex;
+    justify-content: center;
+   }
+  .main-page-header-info {
+    margin-top:-950px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+  .main-page-photo
+  {
+    display: block;
+    margin-left: auto;
+    margin-top: -80px;
+
+  }
+  .main-page-title
+  {
+  font-family: 'Lucifer-bold-prerelease', serif;
+   font-size: 63px;
+   line-height: 68px;
+   font-color: white;
+   text-transform: uppercase;
+   margin-left: 110px;
+   margin-top: 1100px;
+  }
+  .main-page-desrciption
+  {
+   width: 76%;
+   text-align: center;
+   margin: 0 auto;
+   margin-top: 40px
+  }
+  .shop-ul1
+  {
+  --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity));
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    box-sizing: border-box;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  .shop-li1
+  {
+  width: 210px;
+  --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-body-bg-rgb),var(--bs-bg-opacity));
+  padding: 0.25rem;
+  margin: 0.25rem;
+  flex-direction: column;
+  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+    display: flex!important;
+    box-sizing: border-box;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity));
+    }
+  .shop-tovar1-photo
+  {
+  width: 180px
+  height: 180px
+  align-self: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  overflow: clip;
+}
+.shop-h5
+    {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    }
+ </style>
+</head>
+<body>
+ <header>
+  <ul>
+   <li><a href="#main-page" class="list list-1 list-active">Главная</a></li>
+   <li><a href="#shop" class="list list-2">Товары</a></li>
+   <li><a href="#form" class="list list-3">Форма для заказа</a></li>
+    <li><a href="https://t.me/mihailkliagin" target="_blank"><img src="images/1840377_900_600.jpg" width="80" height="40"> </a> </li>
+    <li><a href="https://vk.com/miklyagin" target="_blank"><img src="images/photo-1-1536x1536.jpg" width="40" height="40"></a></li>
+      <li><a href="гитхаб" target="_blank">github</a></li>
+  </ul>
+ </header>
+    <section id="main-page">
+        <div class="main-page" id="top">
+            <div class="main-page-header">
+                <div class="main-page-photo"><img src="images/photobyshop.jpg" width="650" height="1200"></img></div>
+                <div class="main-page-header-info">
+                    <div class="main-page-title">CONQUEST<br>STORE</br></div>
+                    <div class="main-page-description">Кластер мужской и женской одежды: от streetwear до современного тейлоринга, от униформы до outdoor арсенала, от производительного теквира до эффектного бохо. Брендлист удовлетворяет мультифункциональному гардеробу для горожан и путешественников.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="shop" id="shop">
+    <div class="main-page-title">Каталог</br></div>
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        <input name="q" type="hidden" value="search">
+        <ul class="shop-ul1">
+            <li class="shop-li1" width="210">
+                <img src="images/nike-costume1.jpg" class="shop-tovar1-photo" width="180">
+                <h5 class="shop-h5">Nike костюм</h5>
+                <p>Красивый костюм. Цена 100р.</p>
+                <input type="hidden" name="vendor_code" value="111">
+                <p>Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+            </li>
+            <li class="shop-li1" width="210">
+                <img src="images/nike-boots1.jpg" class="shop-tovar1-photo" width="180">
+                <h5 class="shop-h5">Nike кроссовки</h5>
+                <p>Красные кроссовки. Цена 200 р.</p>
+                <input type="hidden" name="vendor_code" value="222">
+                <p>Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+            </li>
+            <li class="shop-li1" width="210">
+                <img src="images/nike-costume2.jpg" class="shop-tovar1-photo" width="180">
+                <h5 class="shop-h5">Товар 3</h5>
+                <p>Описание 3. Цена 300 р.</p>
+                <input type="hidden" name="vendor_code" value="333">
+                <p>Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+            </li>
+            <li class="shop-li1" width="210">
+                <img src="images/nike-costume.jpg" class="shop-tovar1-photo" width="180">
+                <h5 class="shop-h5">Товар 4</h5>
+                <p>Описание 4. Цена 400 р.</p>
+                <input type="hidden" name="vendor_code" value="444">
+                <p>Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+            </li>
+            <li class="shop-li1" width="210">
+                <img src="images/nike-boots2.jpg" class="shop-tovar1-photo" width="180">
+                <h5 class="shop-h5">Товар 5</h5>
+                <p>Описание 5. Цена 500 р.</p>
+                <input type="hidden" name="vendor_code" value="555">
+                <p>Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+            </li>
+            <li class="shop-li1">
+                <img src="images/nike-longsleeve.jpeg" class="shop-tovar1-photo" width="180">
+                <h5 class="shop-h5">Товар 6</h5>
+                <p>Описание 6. Цена 600 р.</p>
+                <input type="hidden" name="vendor_code" value="666">
+                <p>Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+            </li>
+            <li class="shop-li1" width="210">
+                <img src="images/nike-shoes.jpg" class="shop-tovar1-photo" width="180">
+                <h5 class="shop-h5">Товар 7</h5>
+                <p>Описание 7. Цена 700 р.</p>
+                <input type="hidden" name="vendor_code" value="777">
+                <p>Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+            </li>
+            <li class="shop-li1" width="210">
+                <img src="images/nike-shox-tl-5.jpg" class="shop-tovar1-photo" width="180">
+                <h5 class="shop-h5">Товар 8</h5>
+                <p>Описание 8. Цена 800 р.</p>
+                <input type="hidden" name="vendor_code" value="888">
+                <p>Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+            </li>
+            <li class="shop-li1" width="210">
+                <img src="images/nike-tshirt1.jpg" class="shop-tovar1-photo" width="180">
+                <h5 class="shop-h5">Товар 9</h5>
+                <p>Описание 9. Цена 900 р.</p>
+                <input type="hidden" name="vendor_code" value="999">
+                <p>Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+            </li>
+            <li class="shop-li1" width="210">
+                <img src="images/nike-t-shirt.jpg" class="shop-tovar1-photo" width="180">
+                <h5 class="shop-h5">Товар 10</h5>
+                <p>Описание 10. Цена 1000 р.</p>
+                <input type="hidden" name="vendor_code" value="1110">
+                <p>Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+            </li>
+        </ul>
+        <input type="Submit" value="В корзину">
+    </form>
+
+</section>
+ <section class="order">
+    <td>
+            <h3 align="center" id="form">Форма для заказа</h3>
+            <form action="http://ya.ru/">
+                <p>Фамилия: <input name="last_name" size=20 type="Text" id="a" required></p>
+                <p>Имя: <input name="first_name" size=20 type="Text" id="b" required></p>
+                <p>Почта: <input name="email" size=20 type="Text" id="с" required></p>
+                <p>Телефон <input name="telephone" size=20 type="Text" id="d" required></p>
+                </p>
+                </p>
+                <p> Дополнительная информация:
+                    <br>
+                    <TEXTAREA cols=80 name="textarea" rows=4>Для заметок</TEXTAREA>
+                </p>
+                <p>Какое количество товара вы выбрали?:
+                    <input name="place" type="Radio" value="1"> Меньше 5
+                    <input checked name="place" type="Radio" value="2">От 5 до 10
+                    <input checked name="place" type="Radio" value="3">Больше 10
+                </p>
+                <input name="function" type="hidden" value="page">
+                <input name="page_id" type="hidden" value="4">
+                <p>
+                    <input name="Reset" type="Reset" value="Обновить">
+                    <input name="submit" type="Submit" value="Отправить" id="send">
+                </p>
+            </form>
+        </td>
+    </section>
+ <button id="btn-to-top" onclick="window.location.href='#top'">В начало страницы</button>
+<script>
+         function verify() {
+    console.log("a, b, c, d")
+    let a = parseInt(elementA.value);
+    let b = parseInt(elementB.value);
+    let c = parseInt(elementC.value);
+    let d = parseInt(elementD.value);
+    console.log(a, b, c, d)
+
+    const elementA = document.getElementById("a");
+    elementA.addEventListener('input', verify);
+
+    const elementB = document.getElementById("b");
+    elementB.addEventListener('keyup', verify);
+
+    const elementC = document.getElementById("c");
+    elementC.addEventListener('keyup', verify);
+
+    const elementD = document.getElementById("d");
+    elementD.addEventListener('keyup', verify);
+
+    const elementSend = document.getElementById("send");
+    elementSend.addEventListener('click', send)
+</script>
+<script>
+    const btn1 = document.querySelector('.list-1'),
+      btn2 = document.querySelector('.list-2'),
+      btn3 = document.querySelector('.list-3');
+
+
+
+function change(addClass, removeClass2, removeClass3) {
+    addClass.addEventListener('click', () => {
+        if (!addClass.classList.contains('list-active')) {
+            addClass.classList.add('list-active');
+            removeClass2.classList.remove('list-active');
+            removeClass3.classList.remove('list-active');
+        }
+    })
+}
+
+change(btn1, btn2, btn3);
+change(btn2, btn1, btn3);
+change(btn3, btn2, btn1);
+ </script>
+</body>
+</html>
